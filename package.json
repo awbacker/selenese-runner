@@ -5,14 +5,25 @@
   "homepage": "http://github.com/DBC-as/selenese-runner",
   "description": "Automated execution of selenese scripts (tests made in selenium-ide)",
   "dependencies": {
-    "soda": "*",
     "async": "*",
-    "request": "*"
+    "request": "*",
+    "selenium-html-js-converter": "^0.2.9",
+    "soda": "*",
+    "sync-request": "^2.0.0",
+    "temp": "^0.8.1",
+    "wd-sync": "^1.2.5"
   },
-  "licenses": [{"type": "GPLv3", "url": "https://raw.github.com/DBC-as/selenese-runner/master/COPYING"}],
-  "engines": {"node": "*"},
+  "licenses": [
+    {
+      "type": "GPLv3",
+      "url": "https://raw.github.com/DBC-as/selenese-runner/master/COPYING"
+    }
+  ],
+  "engines": {
+    "node": "*"
+  },
   "main": "lib/selenese-runner.js",
   "scripts": {
-    "test": "./test.sh" 
+    "test": "./test.sh"
   }
 }
